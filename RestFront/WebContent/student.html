@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> 
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+<script type="text/javascript" src="JQuery/jquery-3.2.1.js"></script>
+<title>My CRUD Web UI</title>
+</head>
+
+<body>
+	<div class="container" id="mdiv">
+	
+	<h2 id="ssc">Students Table</h2>
+	<span>This page implemented with jQuery,RESTful,AJAX and bootstrap </span>
+		<table class="table table-striped  table-editable"  name="table" id="studentsTable">
+			<tr id="thr">
+				<th>ID</th>
+				<th>Name</th>
+				<th>Department</th>
+				<th>TeacherID</th>
+				<th>checked</th>
+				<th></th>
+			</tr>	
+			<tr>
+				<form class="form-inline" id="form1"  >
+					<th><input id="inpId" name="id" type="text" class="form-control"></th>
+					<th><input id="inpName" name="name" type="text" class="form-control"></th>
+					<th><input id="inpDepartment" name="department" type="text" class="form-control"></th>
+					<th><input id="inpTeacherId" name="teacherId" type="text" class="form-control"></th>
+				</form>
+			</tr>
+				
+		</table>
+		<div class="alert alert-info" role="alert" id="studentAlert"><p font-style: bold>Status</p></div>
+		<button type="button" class="btn btn-primary" form="form1" id="studentAdd" >Add</button>
+		<button type="button" class="btn btn-success" form="form1" id="studentLoad">Load</button>
+		<button type="button" class="btn btn-danger" form="form1" id="studentDelete">Delete</button>
+		<button type="button" class="btn btn-warning" form="form1" id="studentUpdate">Update</button>
+<p id="temp">temp:</p>
+		<script type="text/javascript" src="student.js"></script>
+
+	</div>
+
+
+</body>
+</html>
